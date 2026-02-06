@@ -1,0 +1,22 @@
+.table-header {
+  color: white;
+  background-color: var(--team-color);
+}
+
+.table-header tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-name {
+  margin: 0px;
+  padding: 15px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.players-amount {
+  padding: 15px;
+  text-align: right;
+  white-space: nowrap;
+}

@@ -1,0 +1,119 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  /* Custom Colors */
+  --color-team--Hawks: #e03a3e;
+  --color-team--Celtics: #007a33;
+  --color-team--Nets: #000000;
+  --color-team--Hornets: #1d1160;
+  --color-team--Bulls: #ce1141;
+  --color-team--Cavaliers: #860038;
+  --color-team--Mavericks: #00538c;
+  --color-team--Nuggets: #0e2240;
+  --color-team--Pistons: #c8102e;
+  --color-team--Warriors: #1d428a;
+  --color-team--Rockets: #ce1141;
+  --color-team--Pacers: #002d62;
+  --color-team--Clippers: #c8102e;
+  --color-team--Lakers: #552583;
+  --color-team--Grizzlies: #5d76a9;
+  --color-team--Heat: #98002e;
+  --color-team--Bucks: #00471b;
+  --color-team--Timberwolves: #0c2340;
+  --color-team--Pelicans: #0c2340;
+  --color-team--Knicks: #006bb6;
+  --color-team--Thunder: #007ac1;
+  --color-team--Magic: #0077c0;
+  --color-team--Suns: #1d1160;
+  --color-team--Kings: #5a2d81;
+  --color-team--Spurs: #c4ced4;
+  --color-team--Raptors: #ce1141;
+  --color-team--Jazz: #002b5c;
+  --color-team--Wizards: #002b5c;
+  --color-team--76ers: #006bb6;
+  --color-team--Trail_Blazers: #e03a3e;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+
+  /* Do I need it */
+  place-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #fff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.button {
+  background-color: rgb(26, 115, 232);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px auto;
+}
+
+.button:hover {
+  background-color: rgb(13, 71, 161);
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

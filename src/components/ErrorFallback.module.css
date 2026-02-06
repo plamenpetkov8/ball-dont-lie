@@ -1,0 +1,38 @@
+.container {
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 20px;
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorContainer {
+  max-width: 500px;
+  border-radius: 8px;
+  padding: 40px 30px;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+}
+
+.errorContainer h1 {
+  font-size: 24px;
+  color: #ce1141;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+
+.errorContainer p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+  color: rgb(102, 102, 102);
+}
+
+.errorContainer button {
+  margin: 0 auto;
+}

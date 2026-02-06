@@ -1,0 +1,11 @@
+.heading {
+  padding: 15;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8;
+  justify-content: center;
+}
+
+.heading h1 {
+  margin: 0;
+}

@@ -1,0 +1,36 @@
+.player-container {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  color: rgb(102, 102, 102);
+  background-color: rgb(249, 249, 249);
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.player-container:last-child {
+  border-bottom: none;
+}
+
+.player-info-box {
+  padding: 12px 15px;
+}
+
+.player-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: rgb(102, 102, 102);
+}
+
+.player-others {
+  gap: 15px;
+  display: flex;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+}
+
+.player-jersey-number {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 15px;
+  align-items: center;
+}
