@@ -12,9 +12,13 @@ The project was developed using Node 24.13.0LTS (You could use `nvm` to easily i
 
 1. Download in a directory of your choosing using any of the following:
    - Over SSH:
-     `git@github.com:plamenpetkov8/ball-dont-lie.git`
+     ```bash
+     git clone git@github.com:plamenpetkov8/ball-dont-lie.git
+     ```
    - over HTTPS:
-     `https://github.com/plamenpetkov8/ball-dont-lie.git`
+     ```
+     git clone https://github.com/plamenpetkov8/ball-dont-lie.git
+     ```
 
 2. From the root of the project execute the following command to install module's dependencies:
 
