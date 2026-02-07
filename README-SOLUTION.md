@@ -26,8 +26,10 @@ The project was developed using Node 24.13.0LTS (You could use `nvm` to easily i
 npm install
 ```
 
+2. Add a .env.local in the root of the repository containing a `VITE_BALLDONTLIE_API_KEY=${YOUR_AUTHORIZATION_KEY}` key-value pair where you should replace `${YOUR_AUTHORIZATION_KEY}` with your authorization key for accessing the "Ball Dont Lie" API
+
 3. There are 2 different types of build  
-   3.1 Dev Build
+   4.1 Dev Build
    - execute the following to create a dev build and host it on a dedicated dev server with one command simultaneously:
 
    ```bash
@@ -36,7 +38,7 @@ npm install
 
    **NOTE**: Now you could see the UI following the provided link in the terminal (most commonly [localhost:5173](http://localhost:5173/)). If by any chance you have any other process running on that port, the next available one would be appointed
 
-   3.2 Production Build
+   4.2 Production Build
    - create a production build:
 
    ```bash
