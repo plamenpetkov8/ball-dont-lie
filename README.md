@@ -1,36 +1,84 @@
-# [Ball Don't Lie](https://balldontlie-app-example.vercel.app/)
+# Ball Don't Lie
 
-![Ball Don't Lie](https://github.com/user-attachments/assets/f1da3eb0-ccc3-40de-a484-f632ca9fd326)
+## How to build and start the project locally
 
-## Overview
+### Tech Stack used - NodeJS (24.13.0LTS), React (19), TypeScript (5.7.2)
 
-You are provided with a basic React implementation that uses the [Ball Don’t Lie](https://docs.balldontlie.io/#nba-api) API to fetch information about NBA players and teams. Currently it:
+### Prerequisites
 
-- Fetches the first `50` players.
-- Displays the players in the received order.
-- Applies basic styling and team colors.
-- Defines the types as `any`.
+The project was developed using Node 24.13.0LTS (You could use `nvm` to easily install and switch between different versions of `node`). Additionally, the `OS` used was `Windows 10`.
 
-## Task
+### Installation process (via Terminal)
 
-Your goal is to further enhance the functionality by:
+1. Download in a directory of your choosing using any of the following:
+   - Over SSH:
+     ```bash
+     git clone git@github.com:plamenpetkov8/ball-dont-lie.git
+     ```
+   - over HTTPS:
+     ```
+     git clone https://github.com/plamenpetkov8/ball-dont-lie.git
+     ```
 
-- [DONE] Evaluating and discussing if any improvements can be made to the current implementation.
-- [DONE] Fetching the first `150` players (instead of `50`).
-- [DONE] Grouping the players by their respective teams.
-- [DONE] Sorting players within each team in ascending order by jersey number.
-- [DONE] Rendering each team in a clearly separated and reusable component.
-- [DONE] Styling the application with an appropriate design and semantic markup.
+2. From the root of the project execute the following command to install module's dependencies:
 
-## Requirements and Expectations
+```bash
+npm install
+```
 
-- You're free to use Google search and any AI assistant of your choice.
-- You’re free to use any libraries you’re comfortable with for data handling, state management or styling.
-- Your primary focus should be on demonstrating your approach to best practices regarding:
-  - Code structure and organization
-  - API data fetching and manipulation
-  - Creating flexible and maintainable React components
+2. Add a .env.local in the root of the repository containing a `VITE_BALLDONTLIE_API_KEY=${YOUR_AUTHORIZATION_KEY}` key-value pair where you should replace `${YOUR_AUTHORIZATION_KEY}` with your authorization key for accessing the "Ball Dont Lie" API
 
-We will discuss your decisions and trade-offs as you code, so feel free to explain your thought process and reasoning.
+3. There are 2 different types of build  
+   4.1 Dev Build
+   - execute the following to create a dev build and host it on a dedicated dev server with one command simultaneously:
 
-You can see an implementation example here: [Ball Don't Lie Example](https://balldontlie-app-example.vercel.app/)
+   ```bash
+   npm run dev
+   ```
+
+   **NOTE**: Now you could see the UI following the provided link in the terminal (most commonly [localhost:5173](http://localhost:5173/)). If by any chance you have any other process running on that port, the next available one would be appointed
+
+   4.2 Production Build
+   - create a production build:
+
+   ```bash
+   npm run build
+   ```
+
+   - host your newly created optimized production build on a special server provided by vite:
+
+   ```bash
+   npm run preview
+   ```
+
+   **NOTE**: Now you could see the UI following the provided link in the terminal (most commonly [localhost:4173](http://localhost:4173/)). If by any chance you have any other process running on that port, the next available one will be appointed
+
+4. ENJOY THE APP!!!
+
+### Unit and Integration Testing
+
+1. Test results in the Terminal:
+
+```bash
+npm run test
+```
+
+2. Test results in the Terminal (watches each testing file for changes and re-executes)
+
+```bash
+npm run test:watch
+```
+
+3. Test results in a dedicated UI provided by Vite:
+
+```bash
+npm run test:ui
+```
+
+**NOTE**: Upon the execution of the last command, you will be automatically redirected to the Testing UI
+
+### Check your project with `esling`
+
+```bash
+npm run lint
+```
